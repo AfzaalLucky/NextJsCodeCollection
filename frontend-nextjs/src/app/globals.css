@@ -25,4 +25,91 @@
   .btn-amber {
     @apply inline-flex items-center justify-center gap-2 px-8 py-4 bg-secondary-500 text-white font-bold text-lg rounded-xl hover:bg-secondary-600 active:scale-95 transition-all duration-200 shadow-md;
   }
-  .btn
+  .btn-white {
+    @apply inline-flex items-center justify-center gap-2 px-6 py-3 bg-white text-primary-700 font-semibold rounded-lg hover:bg-primary-50 active:scale-95 transition-all duration-200 shadow-sm;
+  }
+  .btn-outline-white {
+    @apply inline-flex items-center justify-center gap-2 px-6 py-3 border-2 border-white text-white font-semibold rounded-lg hover:bg-white hover:text-primary-700 active:scale-95 transition-all duration-200;
+  }
+
+  /* Section helpers */
+  .section-title {
+    @apply text-3xl md:text-4xl font-bold text-gray-900 mb-4 leading-tight;
+  }
+  .section-subtitle {
+    @apply text-lg text-gray-500 mb-8 leading-relaxed;
+  }
+
+  /* Cards */
+  .card {
+    @apply bg-white rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow duration-300 overflow-hidden;
+  }
+  .card-elevated {
+    @apply bg-white rounded-2xl shadow-lg border border-gray-100 overflow-hidden;
+  }
+
+  /* Badge */
+  .badge {
+    @apply inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold;
+  }
+  .badge-blue {
+    @apply badge bg-primary-100 text-primary-700;
+  }
+  .badge-amber {
+    @apply badge bg-amber-100 text-amber-700;
+  }
+  .badge-green {
+    @apply badge bg-green-100 text-green-700;
+  }
+
+  /* Rich WP content */
+  .prose-content {
+    @apply text-gray-700 leading-relaxed;
+  }
+  .prose-content h2 {
+    @apply text-2xl md:text-3xl font-bold text-gray-900 mt-10 mb-4 leading-tight;
+  }
+  .prose-content h3 {
+    @apply text-xl font-bold text-gray-900 mt-8 mb-3;
+  }
+  .prose-content h4 {
+    @apply text-lg font-semibold text-gray-800 mt-6 mb-2;
+  }
+  .prose-content p {
+    @apply mb-5 text-gray-600 leading-relaxed text-[1.05rem];
+  }
+  .prose-content ul {
+    @apply mb-5 space-y-2 pl-1;
+  }
+  .prose-content ul li {
+    @apply flex items-start gap-2 text-gray-600;
+  }
+  .prose-content ul li::before {
+    content: '';
+    @apply w-5 h-5 rounded-full bg-primary-100 flex-shrink-0 mt-0.5;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='%232563eb'%3E%3Cpath fill-rule='evenodd' d='M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z' clip-rule='evenodd'/%3E%3C/svg%3E");
+    background-size: 12px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .prose-content ol {
+    @apply mb-5 space-y-2 pl-5 list-decimal;
+  }
+  .prose-content ol li {
+    @apply text-gray-600 pl-1;
+  }
+  .prose-content strong {
+    @apply font-semibold text-gray-800;
+  }
+  .prose-content a {
+    @apply text-primary-600 underline hover:text-primary-700;
+  }
+  .prose-content blockquote {
+    @apply border-l-4 border-primary-400 pl-5 py-1 my-6 bg-primary-50 rounded-r-lg text-gray-700 italic;
+  }
+
+  /* Divider */
+  .divider {
+    @apply border-t border-gray-100 my-8;
+  }
+}
