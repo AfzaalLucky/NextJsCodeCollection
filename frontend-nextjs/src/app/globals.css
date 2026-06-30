@@ -105,7 +105,7 @@
     @apply text-primary-600 underline hover:text-primary-700;
   }
   .prose-content blockquote {
-    @apply border-l-4 border-primary-400 pl-5 py-1 my-6 bg-primary-50 rounded-r-lg text-gray-700 italic;
+    @apply border-l-4 border-primary-500 pl-5 py-1 my-6 bg-primary-50 rounded-r-lg text-gray-700 italic;
   }
 
   /* Divider */
